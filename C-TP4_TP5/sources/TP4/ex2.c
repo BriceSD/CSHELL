@@ -5,7 +5,7 @@
 
 char* get_source(int argc, char *argv[]){
   static char file[256];
-  if(argc <= 2){
+  if(argc != 3){
     printf("Entrez le nom du fichier source : ");
     scanf("%s", file);
     return file;
@@ -15,7 +15,7 @@ char* get_source(int argc, char *argv[]){
 
 char* get_dest(int argc, char *argv[]){
   static char file[256];
-  if(argc <= 2){
+  if(argc != 3){
     printf("Entrez le nom du fichier destination : ");
     scanf("%s", file);
     return file;
