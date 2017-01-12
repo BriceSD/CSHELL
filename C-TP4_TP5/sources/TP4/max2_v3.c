@@ -13,8 +13,8 @@ int main(int argc, char *argv[])
   /*printf("Donnez deux entiers decimaux : ") ;
   scanf("%d%d", &a, &b) ;*/
   if (argc != 3) return 0 ;
-  a = (int) argv[1] ;
-  b = (int) argv[2] ;
+  a = atoi(argv[1]);
+  b = atoi(argv[2]);
   c = maximum (a, b) ;
   printf("Le plus grand des deux entiers %d et %d est %d\n", a, b, c) ;
   return 0 ;
