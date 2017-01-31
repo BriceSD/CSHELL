@@ -1,0 +1,24 @@
+#!/bin/bash
+
+if [ ! -f "~/.pensebete" ] ; then
+	touch ~/.pensebete
+else
+	cat ~/.pensebete
+fi
+
+if [ $# -ge 2 ] ; then
+
+	if [ $1 == "-c" ] ; then
+
+		grep $2 ~/.pensebete
+	
+	else
+	
+		for a in $*
+		do
+			echo $a >> ~/.pensebete
+		done	
+	fi
+else
+	cat - >> ~/.pensebete
+fi

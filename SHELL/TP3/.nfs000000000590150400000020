@@ -1,0 +1,3 @@
+#!/bin/bash
+
+find /home/ -perm /o=x -type f
