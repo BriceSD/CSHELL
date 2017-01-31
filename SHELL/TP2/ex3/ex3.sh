@@ -1,2 +1,2 @@
 #!/bin/sh
-find $HOME -name 'core' -o -name '*v' -o -name '#*#' -exec rm -i {}\;
+find $HOME /( -name 'core' -o -name '*v' -o -name '#*#' \) -exec rm -i {}\;
